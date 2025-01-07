@@ -48,9 +48,9 @@
        "mime": "text/plain"
       }
      ],
-     "id": "887f4901-0073-4acb-ac34-3f5921e37a90",
+     "id": "a62cb4c9-8ff3-4598-a7fc-a98d3073b136",
      "metadata": {
-      "cellLabel": "Out[5]= ",
+      "cellLabel": "Out[2]= ",
       "isBoxData": false
      }
     }
@@ -58,66 +58,49 @@
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1727626865300,
-     "endTime": 1727626865802
+     "startTime": 1727729272868,
+     "endTime": 1727729273237
     },
-    "executionOrder": 4,
+    "executionOrder": 1,
     "success": true
    }
   },
   {
    "kind": 2,
-   "value": "s=k*Exp[x]\r\nV[s,t]=v[Log[s/k],(T-t)σ^2/2]\r\nPDE//Simplify",
+   "value": "V[s,t]=v[Log[s/k],(T-t)σ^2/2]\r\nPDE//Simplify",
    "languageId": "wolfram",
    "outputs": [
     {
      "items": [
       {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><w></w><w>k</w></wrow></div>",
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wfrac><w><w>s</w></w><w><w></w><w><w>k</w></w></w></wfrac><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></div>",
        "mime": "x-application/wolfram-language-html"
       },
       {
-       "data": "E^x*k",
+       "data": "v[Log[s/k], ((-t + T)*σ^2)/2]",
        "mime": "text/plain"
       }
      ],
-     "id": "4ed3fa4e-ebf7-4e49-9ea0-eaaa79ff8f21",
+     "id": "d7a02efc-b557-4e19-8af7-e7c52a47ce91",
      "metadata": {
-      "cellLabel": "Out[11]= ",
+      "cellLabel": "Out[3]= ",
       "isBoxData": false
      }
     },
     {
      "items": [
       {
-       "data": "<div class=\"wexpr\"><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></div>",
+       "data": "<div class=\"wexpr\"><wrow><w></w><wrow><w></w><wrow><w></w><w>r</w><w></w><wrow><w></w><w>sD</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wfrac><w><w>s</w></w><w><w></w><w><w>k</w></w></w></wfrac><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow><w>,</w><w>s</w></wrow><wb>]</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><wsup><w></w><w>V</w><w><wrow><w></w><wb>(</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>)</wb></wrow></w></wsup><wrow><w></w><wb>[</wb><wrow><w></w><w>s</w><w>,</w><w>t</w></wrow><wb>]</wb></wrow></wrow><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wsup><w></w><w>s</w><w><w>2</w></w></wsup><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup><w></w><wrow><w></w><wsup><w></w><w>V</w><w><wrow><w></w><wb>(</wb><wrow><w></w><w>2</w><w>,</w><w>0</w></wrow><wb>)</wb></wrow></w></wsup><wrow><w></w><wb>[</wb><wrow><w></w><w>s</w><w>,</w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><w>r</w><w></w><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wfrac><w><w>s</w></w><w><w></w><w><w>k</w></w></w></wfrac><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></wrow></wrow></div>",
        "mime": "x-application/wolfram-language-html"
       },
       {
-       "data": "v[Log[E^x], ((-t + T)*σ^2)/2]",
+       "data": "r*sD[v[Log[s/k], ((-t + T)*σ^2)/2], s] + Derivative[0, 1][V][s, t] + (s^2*σ^2*Derivative[2, 0][V][s, t])/2 == r*v[Log[s/k], ((-t + T)*σ^2)/2]",
        "mime": "text/plain"
       }
      ],
-     "id": "afc3f515-8c94-47f3-a0cc-9ea38f307341",
+     "id": "6bd55c4b-34dd-480f-a63b-8ee55951b08f",
      "metadata": {
-      "cellLabel": "Out[12]= ",
-      "isBoxData": false
-     }
-    },
-    {
-     "items": [
-      {
-       "data": "<div class=\"wexpr\"><wrow><w></w><wrow><w></w><wrow><w></w><w>r</w><w></w><wrow><w></w><w>sD</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><w></w><w>k</w></wrow></wrow><wb>]</wb></wrow></wrow></wrow><w>+</w><wrow><w></w><wsup><w></w><w>V</w><w><wrow><w></w><wb>(</wb><wrow><w></w><w>0</w><w>,</w><w>1</w></wrow><wb>)</wb></wrow></w></wsup><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><w></w><w>k</w></wrow><w>,</w><w>t</w></wrow><wb>]</wb></wrow></wrow><w>+</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wsup><w></w><w>𝕖</w><w><wrow><w></w><w>2</w><w></w><w>x</w></wrow></w></wsup><w></w><wsup><w></w><w>k</w><w><w>2</w></w></wsup><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup><w></w><wrow><w></w><wsup><w></w><w>V</w><w><wrow><w></w><wb>(</wb><wrow><w></w><w>2</w><w>,</w><w>0</w></wrow><wb>)</wb></wrow></w></wsup><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><w></w><w>k</w></wrow><w>,</w><w>t</w></wrow><wb>]</wb></wrow></wrow></wrow></wrow><w class=\"symbol\"></w><wrow><w></w><w>r</w><w></w><wrow><w></w><w>v</w><wrow><w></w><wb>[</wb><wrow><w></w><wrow><w></w><w>Log</w><wrow><w></w><wb>[</wb><wsup><w></w><w>𝕖</w><w><w>x</w></w></wsup><wb>]</wb></wrow></wrow><w>,</w><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>2</w></w></w></wfrac><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>t</w></wrow><w>+</w><w>T</w></wrow><wb>)</wb></wrow><w></w><wsup><w></w><w>σ</w><w><w>2</w></w></wsup></wrow></wrow><wb>]</wb></wrow></wrow></wrow></wrow></div>",
-       "mime": "x-application/wolfram-language-html"
-      },
-      {
-       "data": "r*sD[v[Log[E^x], ((-t + T)*σ^2)/2], E^x*k] + Derivative[0, 1][V][E^x*k, t] + (E^(2*x)*k^2*σ^2*Derivative[2, 0][V][E^x*k, t])/2 == r*v[Log[E^x], ((-t + T)*σ^2)/2]",
-       "mime": "text/plain"
-      }
-     ],
-     "id": "0e623a67-f48c-4a2b-9758-8ca7e8ca63aa",
-     "metadata": {
-      "cellLabel": "Out[13]= ",
+      "cellLabel": "Out[4]= ",
       "isBoxData": false
      }
     }
@@ -125,10 +108,10 @@
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1727627301389,
-     "endTime": 1727627302074
+     "startTime": 1727729304104,
+     "endTime": 1727729304841
     },
-    "executionOrder": 11,
+    "executionOrder": 3,
     "success": true
    }
   },
