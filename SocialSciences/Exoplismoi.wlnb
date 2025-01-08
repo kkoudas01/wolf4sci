@@ -2,7 +2,39 @@
  "cells": [
   {
    "kind": 1,
-   "value": "# Δύο ανταγωνιστικά κράτη",
+   "value": "# Κούρσα εξοπλισμών",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "*Κώστας Κούδας*",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "Στην παρούσα μελέτη θα μελετήσουμε την πορεία εξέλιξης των εξοπλιστικών προγραμμάτων κάποιων ανταγωνιστικών κρατών. Φυσικά, δεν αξιωνόμαστε ότι με αυτήν μπορούμε να κάνουμε αυστηρές προβλέψεις. Η ποσοτική ανάλυση εν προκειμένω είναι απλά ένα εργαλείο για να βγάλουμε ποιοτικά συμπεράσματα.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "## Δύο ανταγωνιστικά κράτη",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "### Μοντελοποίηση προβλήματος",
    "languageId": "markdown",
    "outputs": [],
    "metadata": {},
@@ -32,9 +64,9 @@
        "mime": "text/plain"
       }
      ],
-     "id": "b5986f59-f6c6-4584-b3e3-f7b2f5958eab",
+     "id": "68440db5-d923-47d7-b88f-de93c9234315",
      "metadata": {
-      "cellLabel": "Out[114]= ",
+      "cellLabel": "Out[5]= ",
       "isBoxData": false
      }
     },
@@ -49,9 +81,9 @@
        "mime": "text/plain"
       }
      ],
-     "id": "a7febad6-6dfa-4506-acb5-2011d8fc5e89",
+     "id": "94dc91b4-0eed-43a8-959c-a0fdcf230a47",
      "metadata": {
-      "cellLabel": "Out[115]= ",
+      "cellLabel": "Out[6]= ",
       "isBoxData": false
      }
     }
@@ -59,10 +91,10 @@
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1736276714862,
-     "endTime": 1736276715544
+     "startTime": 1736315087561,
+     "endTime": 1736315088511
     },
-    "executionOrder": 111,
+    "executionOrder": 2,
     "success": true
    }
   },
@@ -90,9 +122,9 @@
        "mime": "text/plain"
       }
      ],
-     "id": "cd80a89e-f161-429f-b1d8-23b148b0e2db",
+     "id": "7c675f97-4626-4c30-b940-7e4f1604a0ba",
      "metadata": {
-      "cellLabel": "Out[118]= ",
+      "cellLabel": "Out[9]= ",
       "isBoxData": false
      }
     },
@@ -107,9 +139,9 @@
        "mime": "text/plain"
       }
      ],
-     "id": "a1e26e47-07dc-45df-bdce-1a5bf275a725",
+     "id": "6ec005fe-4c0c-4ea2-b34e-9ca5006897d0",
      "metadata": {
-      "cellLabel": "Out[119]= ",
+      "cellLabel": "Out[10]= ",
       "isBoxData": false
      }
     }
@@ -117,12 +149,412 @@
    "metadata": {},
    "executionSummary": {
     "timing": {
-     "startTime": 1736276716501,
-     "endTime": 1736276716935
+     "startTime": 1736315092879,
+     "endTime": 1736315093428
+    },
+    "executionOrder": 7,
+    "success": true
+   }
+  },
+  {
+   "kind": 1,
+   "value": "### Σημεία ισορροπίας",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "Πάμε πρώτα να βρούμε τα σημεία ισορροπίας του συστήματος αυτού.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "vecX := ax*(SX-x)(px-(x-y)/y)\r\nvecY := ay*(SY-y)(py-(y-x)/x)\r\nsol0 := Solve[{vecX==0, vecY==0}, {x, y}]\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[1]][[1]]]<>\", \"<>ToString[y/.sol0[[1]][[2]]]<>\")\"]\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[2]][[1]]]<>\", \"<>ToString[y/.sol0[[2]][[2]]]<>\")\"]\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[3]][[1]]]<>\", \"<>ToString[y/.sol0[[3]][[2]]]<>\")\"]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SX + py SX)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SX + py SX)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "b9e8853e-ed00-47de-9e2c-6528ef888802",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2400faab-046f-4789-9b2a-75102f8fde13",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SY + px SY, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SY + px SY, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "1744fa94-3c3d-4d77-a2b8-5141c0fcf3d7",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1736315641896,
+     "endTime": 1736315642816
+    },
+    "executionOrder": 62,
+    "success": true
+   }
+  },
+  {
+   "kind": 1,
+   "value": "Αυτά τώρα θα τα αξιολογήσουμε ως προς την ευστάθεια. Προς τούτο θα βρούμε πρώτα τον Ιακωβιανό πίνακα.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "jacobianMatix := {\r\n    {D[vecX, x], D[vecX, y]},\r\n    {D[vecY, x], D[vecY, y]}\r\n}\r\nMatrixForm[jacobianMatix]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><wrow><w></w><wrow><w></w><w>-</w><w>ax</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>px</w><w>-</w><wfrac><w><wrow><w></w><w>x</w><w>-</w><w>y</w></wrow></w><w><w></w><w><w>y</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow><w>-</w><wfrac><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>-</w><w>x</w></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>y</w></w></w></wfrac></wrow></w><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>-</w><w>x</w></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><wrow><w></w><w>x</w><w>-</w><w>y</w></wrow></w><w><w></w><w><wsup><w></w><w>y</w><w><w>2</w></w></wsup></w></w></wfrac><w>+</w><wfrac><w><w>1</w></w><w><w></w><w><w>y</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SY</w><w>-</w><w>y</w></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>x</w></w></w></wfrac><w>+</w><wfrac><w><wrow><w></w><wrow><w></w><w>-</w><w>x</w></wrow><w>+</w><w>y</w></wrow></w><w><w></w><w><wsup><w></w><w>x</w><w><w>2</w></w></wsup></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w><w><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SY</w><w>-</w><w>y</w></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>x</w></w></w></wfrac></wrow><w>-</w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>py</w><w>-</w><wfrac><w><wrow><w></w><wrow><w></w><w>-</w><w>x</w></wrow><w>+</w><w>y</w></wrow></w><w><w></w><w><w>x</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "MatrixForm[{{-(ax*(px - (x - y)/y)) - (ax*(SX - x))/y, ax*(SX - x)*((x - y)/y^2 + y^(-1))}, {ay*(SY - y)*(x^(-1) + (-x + y)/x^2), -((ay*(SY - y))/x) - ay*(py - (-x + y)/x)}}]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "7ec762d1-f0bd-4ff6-9e64-779210b5fc44",
+     "metadata": {
+      "cellLabel": "Out[70]//MatrixForm= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1736316338703,
+     "endTime": 1736316339380
+    },
+    "executionOrder": 69,
+    "success": true
+   }
+  },
+  {
+   "kind": 1,
+   "value": "Για τα σημεία ισορροπίας αυτός γίνεται ως ακολούθως.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "Print[\"(x,y)=(\"<>ToString[x/.sol0[[1]][[1]]]<>\", \"<>ToString[y/.sol0[[1]][[2]]]<>\")\"]\r\njacobianMatix/.sol0[[1]]//MatrixForm\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[2]][[1]]]<>\", \"<>ToString[y/.sol0[[2]][[2]]]<>\")\"]\r\njacobianMatix/.sol0[[2]]//MatrixForm\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[3]][[1]]]<>\", \"<>ToString[y/.sol0[[3]][[2]]]<>\")\"]\r\njacobianMatix/.sol0[[3]]//MatrixForm",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SX + py SX)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SX + py SX)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a3b07022-b329-4a73-9b08-77cc81a10e94",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><wrow><w></w><w>-</w><w>ax</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>px</w><w>+</w><wfrac><w><wrow><w></w><w>py</w><w></w><w>SX</w></wrow></w><w><w></w><w><wrow><w></w><w>SX</w><w>+</w><wrow><w></w><w>py</w><w></w><w>SX</w></wrow></wrow></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w><w><w>0</w></w><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>SX</w></w></w></wfrac><w>+</w><wfrac><w><w>py</w></w><w><w></w><w><w>SX</w></w></w></wfrac></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>SX</w></wrow><w>-</w><wrow><w></w><w>py</w><w></w><w>SX</w></wrow><w>+</w><w>SY</w></wrow><wb>)</wb></wrow></wrow></w><w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wrow><w></w><w>-</w><w>SX</w></wrow><w>-</w><wrow><w></w><w>py</w><w></w><w>SX</w></wrow><w>+</w><w>SY</w></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>SX</w></w></w></wfrac></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "MatrixForm[{{-(ax*(px + (py*SX)/(SX + py*SX))), 0}, {ay*(SX^(-1) + py/SX)*(-SX - py*SX + SY), -((ay*(-SX - py*SX + SY))/SX)}}]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "16d34702-87d4-41e9-b18b-18d25cbdfdbf",
+     "metadata": {
+      "cellLabel": "Out[108]//MatrixForm= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "24ec2bfc-f972-4902-b740-f2870f135a3a",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><wrow><w></w><w>-</w><w>ax</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>px</w><w>-</w><wfrac><w><wrow><w></w><w>SX</w><w>-</w><w>SY</w></wrow></w><w><w></w><w><w>SY</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w><w><w>0</w></w><w><w>0</w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>ay</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>py</w><w>-</w><wfrac><w><wrow><w></w><wrow><w></w><w>-</w><w>SX</w></wrow><w>+</w><w>SY</w></wrow></w><w><w></w><w><w>SX</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "MatrixForm[{{-(ax*(px - (SX - SY)/SY)), 0}, {0, -(ay*(py - (-SX + SY)/SX))}}]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "42945991-e25e-4126-9e20-d103a019421e",
+     "metadata": {
+      "cellLabel": "Out[110]//MatrixForm= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SY + px SY, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SY + px SY, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ec2c6ce9-c261-4891-854c-5172624f16e3",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>(</wb><w>⁠</w><wgrid style=\"grid-template-columns:repeat(2,max-content);\"><w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>-</w><w>SY</w><w>-</w><wrow><w></w><w>px</w><w></w><w>SY</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>SY</w></w></w></wfrac></wrow></w><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><wfrac><w><w>1</w></w><w><w></w><w><w>SY</w></w></w></wfrac><w>+</w><wfrac><w><w>px</w></w><w><w></w><w><w>SY</w></w></w></wfrac></wrow><wb>)</wb></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>-</w><w>SY</w><w>-</w><wrow><w></w><w>px</w><w></w><w>SY</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w>0</w></w><w><wrow><w></w><wrow><w></w><w>-</w><w>ay</w></wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>py</w><w>+</w><wfrac><w><wrow><w></w><w>px</w><w></w><w>SY</w></wrow></w><w><w></w><w><wrow><w></w><w>SY</w><w>+</w><wrow><w></w><w>px</w><w></w><w>SY</w></wrow></wrow></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></w></wgrid><w>⁠</w><wb>)</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "MatrixForm[{{-((ax*(SX - SY - px*SY))/SY), ax*(SY^(-1) + px/SY)*(SX - SY - px*SY)}, {0, -(ay*(py + (px*SY)/(SY + px*SY)))}}]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "1283a5b3-15f6-4d1a-a4bd-d64b32d89865",
+     "metadata": {
+      "cellLabel": "Out[112]//MatrixForm= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1736316749326,
+     "endTime": 1736316750406
+    },
+    "executionOrder": 107,
+    "success": true
+   }
+  },
+  {
+   "kind": 1,
+   "value": "Ακολούθως θα βρούμε τις ιδιοτιμές του στα σημεία ισορροπίας.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "Print[\"(x,y)=(\"<>ToString[x/.sol0[[1]][[1]]]<>\", \"<>ToString[y/.sol0[[1]][[2]]]<>\")\"]\r\nEigenvalues[jacobianMatix/.sol0[[1]]]//Simplify\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[2]][[1]]]<>\", \"<>ToString[y/.sol0[[2]][[2]]]<>\")\"]\r\nEigenvalues[jacobianMatix/.sol0[[2]]]//Simplify\r\nPrint[\"(x,y)=(\"<>ToString[x/.sol0[[3]][[1]]]<>\", \"<>ToString[y/.sol0[[3]][[2]]]<>\")\"]\r\nEigenvalues[jacobianMatix/.sol0[[3]]]//Simplify",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SX + py SX)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SX + py SX)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "6db77ea8-ad40-4e1b-bf0d-ed0b89391ddb",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>px</w><w>+</w><w>py</w><w>+</w><wrow><w></w><w>px</w><w></w><w>py</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><w>1</w><w>+</w><w>py</w></wrow></w></w></wfrac></wrow><w>,</w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>py</w><w>-</w><wfrac><w><w>SY</w></w><w><w></w><w><w>SX</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-((ax*(px + py + px*py))/(1 + py)), ay*(1 + py - SY/SX)}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4cffcb01-330f-4f9b-bf7d-cbaecc2ceacd",
+     "metadata": {
+      "cellLabel": "Out[117]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SX, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SX, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "26b8cd0c-d3e7-4919-a3d7-05dc41e3acb2",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>+</w><wrow><w></w><w>py</w><w></w><w>SX</w></wrow><w>-</w><w>SY</w></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>SX</w></w></w></wfrac></wrow><w>,</w><wfrac><w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>SX</w><w>-</w><wrow><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>px</w></wrow><wb>)</wb></wrow><w></w><w>SY</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><w>SY</w></w></w></wfrac></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-((ay*(SX + py*SX - SY))/SX), (ax*(SX - (1 + px)*SY))/SY}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "688c4ffb-d472-4df9-95d2-185a6dc3539d",
+     "metadata": {
+      "cellLabel": "Out[119]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre>(x,y)=(SY + px SY, SY)\n</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"(x,y)=(SY + px SY, SY)\\n\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "fbaa9900-d090-4730-a9d3-56027d775578",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><w>-</w><wfrac><w><wrow><w></w><w>ay</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>px</w><w>+</w><w>py</w><w>+</w><wrow><w></w><w>px</w><w></w><w>py</w></wrow></wrow><wb>)</wb></wrow></wrow></w><w><w></w><w><wrow><w></w><w>1</w><w>+</w><w>px</w></wrow></w></w></wfrac></wrow><w>,</w><wrow><w></w><w>ax</w><w></w><wrow><w></w><wb>(</wb><wrow><w></w><w>1</w><w>+</w><w>px</w><w>-</w><wfrac><w><w>SX</w></w><w><w></w><w><w>SY</w></w></w></wfrac></wrow><wb>)</wb></wrow></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{-((ay*(px + py + px*py))/(1 + px)), ax*(1 + px - SX/SY)}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c745226c-2fce-48cd-8a55-1122e0838bc2",
+     "metadata": {
+      "cellLabel": "Out[121]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1736316848566,
+     "endTime": 1736316849515
     },
     "executionOrder": 116,
     "success": true
    }
+  },
+  {
+   "kind": 1,
+   "value": "Αφού η πρώτη ιδιοτιμή είναι στην 1η και την 3η περίπτωση αρνητική, αυτό που μάς ενδιαφέρει είναι πότε η δεύτερη ιδιοτιμή είναι αρνητική. Το πρόσημο της δεύτερης ιδιοτιμής είναι:\r\n\r\n- το πρόσημο της παράστασης `1+py-SY/SX` στην 1η περίπτωση,\r\n\r\n- το πρόσημο της παράστασης `1+px-SX/SY` στην 3η περίπτωση.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "Όσον αφορά την 2η περίπτωση, τα πρόσημα των ιδιοτιμών της είναι:\r\n\r\n- το πρόσημο της παράστασης `SY/SX-(1+py)` της πρώτης ιδιοτιμής\r\n\r\n- το πρόσημο της παράστασης `SX/SY-(1+px)` της δεύτερης ιδιοτιμής.",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 1,
+   "value": "### Συγκεκριμένα παραδείγματα",
+   "languageId": "markdown",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -207,14 +639,7 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276718748,
-     "endTime": 1736276719773
-    },
-    "executionOrder": 120,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -230,14 +655,7 @@
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276721130,
-     "endTime": 1736276721245
-    },
-    "executionOrder": 130,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -253,14 +671,7 @@
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276722654,
-     "endTime": 1736276723012
-    },
-    "executionOrder": 131,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -294,14 +705,7 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276726185,
-     "endTime": 1736276727111
-    },
-    "executionOrder": 135,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -317,14 +721,7 @@
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276769135,
-     "endTime": 1736276769609
-    },
-    "executionOrder": 140,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 2,
@@ -350,14 +747,7 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276771575,
-     "endTime": 1736276772310
-    },
-    "executionOrder": 144,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -373,14 +763,7 @@
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736277741790,
-     "endTime": 1736277742198
-    },
-    "executionOrder": 163,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 2,
@@ -406,14 +789,7 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736278827894,
-     "endTime": 1736278834654
-    },
-    "executionOrder": 196,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 2,
@@ -421,14 +797,7 @@
    "languageId": "wolfram",
    "outputs": [],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736278283723,
-     "endTime": 1736278284131
-    },
-    "executionOrder": 175,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 2,
@@ -454,14 +823,7 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736278841949,
-     "endTime": 1736278847278
-    },
-    "executionOrder": 200,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
@@ -470,21 +832,6 @@
    "outputs": [],
    "metadata": {},
    "executionSummary": {}
-  },
-  {
-   "kind": 2,
-   "value": "vecX := ax*(SX-x)(px-(x-y)/y)\r\nvecY := ay*(SY-y)(py-(y-x)/x)",
-   "languageId": "wolfram",
-   "outputs": [],
-   "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276879500,
-     "endTime": 1736276879773
-    },
-    "executionOrder": 145,
-    "success": true
-   }
   },
   {
    "kind": 2,
@@ -510,18 +857,11 @@
     }
    ],
    "metadata": {},
-   "executionSummary": {
-    "timing": {
-     "startTime": 1736276928482,
-     "endTime": 1736276933154
-    },
-    "executionOrder": 147,
-    "success": true
-   }
+   "executionSummary": {}
   },
   {
    "kind": 1,
-   "value": "# Τρία ανταγωνιστικά κράτη",
+   "value": "## Τρία ανταγωνιστικά κράτη",
    "languageId": "markdown",
    "outputs": [],
    "metadata": {},
@@ -529,7 +869,7 @@
   },
   {
    "kind": 1,
-   "value": "# Ένα κράτος και συμμαχία δύο κρατών",
+   "value": "## Ένα κράτος και συμμαχία δύο κρατών",
    "languageId": "markdown",
    "outputs": [],
    "metadata": {},
@@ -537,7 +877,7 @@
   },
   {
    "kind": 1,
-   "value": "# Μία συμμαχία δύο κρατών ενάντια σε μια άλλη συμμαχία δύο κρατών",
+   "value": "## Μία συμμαχία δύο κρατών ενάντια σε μια άλλη συμμαχία δύο κρατών",
    "languageId": "markdown",
    "outputs": [],
    "metadata": {},
