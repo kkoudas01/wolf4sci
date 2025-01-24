@@ -1,0 +1,356 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "Export[\"output.ipynb\", NotebookOpen[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\IstoriaTaxikiSyneidisi.wlnb\"]]\r\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">FrontEndObject::notavail</span>: \n  A front end is not available; certain operations require a front end.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "FrontEndObject::notavail: \n  A front end is not available; certain operations require a front end.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2a9d5605-01da-49cd-b60b-4d8bd6642ffd",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">Export::infer</span>: Cannot infer format of file output.ipynb.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Export::infer: Cannot infer format of file output.ipynb.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4dd4e5a7-4ae3-4457-ab88-3e2fdbd278b7",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>$Failed</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "$Failed",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ae49d7aa-f619-4b42-8d4f-8692e6609ed1",
+     "metadata": {
+      "cellLabel": "Out[10]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "$CommandLine",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><w>C:\\Program Files\\Wolfram Research\\Wolfram Engine\\14.0\\wolfram.exe</w><w>,</w><w>-noicon</w><w>,</w><w>-wstp</w><w>,</w><w>-linkprotocol</w><w>,</w><w>SharedMemory</w><w>,</w><w>-linkmode</w><w>,</w><w>connect</w><w>,</w><w>-linkname</w><w>,</w><w>nosa7wx91avnl67m</w></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{\"C:\\\\Program Files\\\\Wolfram Research\\\\Wolfram Engine\\\\14.0\\\\wolfram.exe\", \"-noicon\", \"-wstp\", \"-linkprotocol\", \"SharedMemory\", \"-linkmode\", \"connect\", \"-linkname\", \"nosa7wx91avnl67m\"}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2733be8a-e32e-418d-9201-7cc78672ead6",
+     "metadata": {
+      "cellLabel": "Out[8]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "Clear[\"Global`*\"]\r\nnbData = NotebookImport[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\IstoriaTaxikiSyneidisi.nb\", \"Output\"];\r\nExport[\"output.html\", nbData]\r\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>output.html</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"output.html\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ad606d07-5f5e-44b4-a7c9-6782aa91b252",
+     "metadata": {
+      "cellLabel": "Out[30]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "Directory[]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>C:\\Users\\kkoud\\AppData\\Local\\Programs\\Microsoft VS Code</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"C:\\\\Users\\\\kkoud\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0f806d68-e28e-4902-a586-e3059a730897",
+     "metadata": {
+      "cellLabel": "Out[25]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "Clear[\"Global`*\"]\r\nnbData = NotebookImport[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\IstoriaTaxikiSyneidisi.nb\", \"Cell\"];\r\nExport[\"output.html\", nbData]\r\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>output.html</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "\"output.html\"",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "b1193f3d-d0fd-45ef-9a2a-df9d25cff0f5",
+     "metadata": {
+      "cellLabel": "Out[48]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "(* Open the notebook *)\r\nnb = NotebookOpen[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\IstoriaTaxikiSyneidisi.wlnb\"];\r\n\r\n(* Get all cells in the notebook *)\r\ncells = NotebookRead[nb];\r\n\r\n(* Filter out the code cells *)\r\noutputCells = Select[cells, (#[[1, 2]] =!= \"Input\") &];\r\n\r\n(* Create a new notebook with only the output cells *)\r\nnewNb = CreateDocument[outputCells];\r\n\r\n(* Export the new notebook to HTML *)\r\nNotebookPrint[newNb, \"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\ISTORIATAXIKISYNEIDISI.html\", \"HTML\"];",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">FrontEndObject::notavail</span>: \n   A front end is not available; certain operations require a front end.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "FrontEndObject::notavail: \n   A front end is not available; certain operations require a front end.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "99251424-ba1b-4af4-80bf-0ffead7d2874",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">Part::partd</span>: Part specification $Failed[[1,2]] is longer than depth of object.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Part::partd: Part specification $Failed[[1,2]] is longer than depth of object.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e16398fb-f193-47f8-8cb0-3ffa4fe2ecb4",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">FrontEndObject::notavail</span>: \n   A front end is not available; certain operations require a front end.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "FrontEndObject::notavail: \n   A front end is not available; certain operations require a front end.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "f5b948fa-4272-44a4-b82c-2951cc5c6067",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">FrontEndObject::notavail</span>: \n   A front end is not available; certain operations require a front end.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "FrontEndObject::notavail: \n   A front end is not available; certain operations require a front end.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ecb6b191-5819-456d-bad7-41efbd90d596",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">General::remote</span>: \n   NotebookPrint cannot write an output file since the front end and kernel do\n     not share a common file system.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "General::remote: \n   NotebookPrint cannot write an output file since the front end and kernel do\n     not share a common file system.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "9c43f03b-94c4-4b68-a4d1-bb7eb2b0fa29",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "(* Import the notebook *)\r\nnb = NotebookImport[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\ISTORIATAXIKISYNEIDISI.wlnb\"];\r\n\r\n(* Filter out the code cells *)\r\noutputCells = Select[nb, (#[[1]] =!= \"Input\") &];\r\n\r\n(* Export the new notebook to HTML *)\r\nNotebookExport[\"C:\\\\Users\\\\kkoud\\\\Documents\\\\GitHub\\\\wolf4sci\\\\SocialSciences\\\\ISTORIATAXIKISYNEIDISI.html\", outputCells, \"HTML\"];",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">NotebookImport::notanb</span>: \n   No notebook file found at C:\\Users\\kkoud\\Documents\\GitHub\\wolf4sci\\SocialSc\n     iences\\ISTORIATAXIKISYNEIDISI.wlnb.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "NotebookImport::notanb: \n   No notebook file found at C:\\Users\\kkoud\\Documents\\GitHub\\wolf4sci\\SocialSc\n     iences\\ISTORIATAXIKISYNEIDISI.wlnb.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2119d8de-60c8-4a8e-8a2a-03905aa98f40",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">Select::normal</span>: \n   Nonatomic expression expected at position 1 in \n    Select[$Failed, #1[[1]] =!= Input &amp; ].</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Select::normal: \n   Nonatomic expression expected at position 1 in \n    Select[$Failed, #1[[1]] =!= Input & ].",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4af27b5b-403b-4713-aeb5-0a0068138dd8",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "(* Import the notebook *)\r\nnb = NotebookImport[\"C:/Users/kkoud/Documents/GitHub/wolf4sci/SocialSciences/ISTORIATAXIKISYNEIDISI.wlnb\"];\r\n\r\n(* Filter out the code cells *)\r\noutputCells = Select[nb, (#[[1]] =!= \"Input\") &];\r\n\r\n(* Export the new notebook to HTML *)\r\nNotebookExport[\"C:/Users/kkoud/Documents/GitHub/wolf4sci/SocialSciences/ISTORIATAXIKISYNEIDISI.html\", outputCells, \"HTML\"];\r\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">NotebookImport::notanb</span>: \n   No notebook file found at C:/Users/kkoud/Documents/GitHub/wolf4sci/SocialSc\n     iences/ISTORIATAXIKISYNEIDISI.wlnb.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "NotebookImport::notanb: \n   No notebook file found at C:/Users/kkoud/Documents/GitHub/wolf4sci/SocialSc\n     iences/ISTORIATAXIKISYNEIDISI.wlnb.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "ebc07337-b1ac-4541-8de9-b7cde1a1ddb5",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">Select::normal</span>: \n   Nonatomic expression expected at position 1 in \n    Select[$Failed, #1[[1]] =!= Input &amp; ].</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Select::normal: \n   Nonatomic expression expected at position 1 in \n    Select[$Failed, #1[[1]] =!= Input & ].",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "4f746505-3ae7-4c9b-b695-4c0d5f8d2c19",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {}
+  },
+  {
+   "kind": 2,
+   "value": "",
+   "languageId": "wolfram",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  }
+ ]
+}

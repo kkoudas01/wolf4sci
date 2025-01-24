@@ -1,22 +1,22 @@
-<|"Notebook" -> <|"Controller" -> "f2454024-6e13-4e69-a885-c1adcdf8d616", 
-   "FocusedCell" -> CellObj[JerryI`Notebook`CellObj`$54], 
+<|"Notebook" -> <|"Controller" -> "d4fcddc1-57c9-499a-b45d-9aefa1e8d461", 
+   "FocusedCell" -> CellObj[JerryI`Notebook`CellObj`$42], 
    "HaveToSaveAs" -> True, "MessangerChannel" -> Messanger, 
-   "ModalsChannel" -> "72d2ba1f-2077-4a03-b494-aca11802de81", 
+   "ModalsChannel" -> "f4d79b99-dd49-4cb7-a891-8f583a0313e5", 
    "Path" -> "C:\\Users\\kkoud\\Documents\\GitHub\\wolf4sci\\SocialSciences\\\
 Exoplismoi.wln.wln", "Quick" -> True, 
    "TOC" -> {Notebook`Editor`TOC`Private`heading[1, "\[CapitalKappa]\
 \[Omicron]\:03cd\[Rho]\[Sigma]\[Alpha] \
 \[CurlyEpsilon]\[Xi]\[Omicron]\[Pi]\[Lambda]\[Iota]\[Sigma]\[Mu]\:03ce\[Nu]", 
-      CellObj[JerryI`Notebook`CellObj`$41]], 
+      CellObj[JerryI`Notebook`CellObj`$36]], 
      Notebook`Editor`TOC`Private`heading[2, "\[CapitalDelta]\:03cd\[Omicron] \
 \[Alpha]\[Nu]\[Tau]\[Alpha]\[Gamma]\[Omega]\[Nu]\[Iota]\[Sigma]\[Tau]\[Iota]\
 \[Kappa]\:03ac \[Kappa]\[Rho]\:03ac\[Tau]\[Eta]", 
-      CellObj[JerryI`Notebook`CellObj`$41]], 
+      CellObj[JerryI`Notebook`CellObj`$36]], 
      Notebook`Editor`TOC`Private`heading[3, "\[CapitalMu]\[Omicron]\[Nu]\
 \[Tau]\[CurlyEpsilon]\[Lambda]\[Omicron]\[Pi]\[Omicron]\:03af\[Eta]\[Sigma]\
 \[Eta] \
 \[Pi]\[Rho]\[Omicron]\[Beta]\[Lambda]\:03ae\[Mu]\[Alpha]\[Tau]\[Omicron]\
-\[FinalSigma]", CellObj[JerryI`Notebook`CellObj`$41]]}|>, 
+\[FinalSigma]", CellObj[JerryI`Notebook`CellObj`$36]]}|>, 
  "Cells" -> 
   {<|"Data" -> ".md # \[CapitalKappa]\[Omicron]\:03cd\[Rho]\[Sigma]\[Alpha] \
 \[CurlyEpsilon]\[Xi]\[Omicron]\[Pi]\[Lambda]\[Iota]\[Sigma]\[Mu]\:03ce\[Nu]\n\
@@ -233,13 +233,11 @@ Exoplismoi.wln.wln", "Quick" -> True,
 \[Tau]\[Omicron]\[Upsilon] \
 `py-(y[t]-x[t])/x[t]`.\n\n\:0388\[Chi]\[Omicron]\[Upsilon]\[Mu]\
 \[CurlyEpsilon], \[Lambda]\[Omicron]\[Iota]\[Pi]\:03cc\[Nu], \[Tau]\[Omicron] \
-\[Kappa]\:03ac\[Tau]\[Omega]\[Theta]\[Iota] \
-\[Mu]\[Omicron]\[Nu]\[Tau]\:03ad\[Lambda]\[Omicron].", 
-    "Display" -> "codemirror", "Hash" -> 
-     "671b5074-b57d-4858-aafa-5a89cc60c494", "Invisible" -> False, 
+\[Kappa]\:03ac\[Tau]", "Display" -> "codemirror", 
+    "Hash" -> "bcce4af3-6f50-4f81-9828-9feff13c795f", "Invisible" -> False, 
     "MetaOnly" -> False, "Props" -> <|"Hidden" -> True|>, "State" -> "Idle", 
     "Type" -> "Input", "UID" -> Null, "Notebook" -> 
-     "bb8091b6-87e2-4415-94f7-46b14d8a46a4"|>, 
+     "a0cff9b2-d2fd-4c41-bc5e-820031b43f72"|>, 
    <|"Data" -> "# \[CapitalKappa]\[Omicron]\:03cd\[Rho]\[Sigma]\[Alpha] \
 \[CurlyEpsilon]\[Xi]\[Omicron]\[Pi]\[Lambda]\[Iota]\[Sigma]\[Mu]\:03ce\[Nu]\n\
 \n*\[CapitalKappa]\:03ce\[Sigma]\[Tau]\[Alpha]\[FinalSigma] \
@@ -458,14 +456,29 @@ Exoplismoi.wln.wln", "Quick" -> True,
 \[Kappa]\:03ac\[Tau]\[Omega]\[Theta]\[Iota] \
 \[Mu]\[Omicron]\[Nu]\[Tau]\:03ad\[Lambda]\[Omicron].", 
     "Display" -> "markdown", "Hash" -> 
-     "ebc3d637-b047-42e1-8b9f-324cc7d84865", "Invisible" -> False, 
+     "bab84a8e-4ba0-46ea-8c51-fb8a68667dfb", "Invisible" -> False, 
     "MetaOnly" -> False, "Props" -> <||>, "State" -> "Idle", 
     "Type" -> "Output", "UID" -> Null, "Notebook" -> 
-     "bb8091b6-87e2-4415-94f7-46b14d8a46a4"|>, 
-   <|"Data" -> "Clear[\"Global`*\"]\ndEqX := x'[t] == \
+     "a0cff9b2-d2fd-4c41-bc5e-820031b43f72"|>, 
+   <|"Data" -> "Clear[\"Global`\"]\ndEqX := x'[t] == \
 ax*(SX-x[t])(px-(x[t]-y[t])/y[t])\ndEqY := y'[t] == \
-ay*(SY-y[t])(py-(y[t]-x[t])/x[t])\ndEqX\ndEqY", "Display" -> "codemirror", 
-    "Hash" -> "2280d66b-4a0d-47c7-8974-43ee38e265a1", "Invisible" -> False, 
-    "MetaOnly" -> False, "Props" -> <||>, "State" -> "Evaluation", 
+ay*(SYX-y[t])(py-(y[t]-x[t])/x[t])\ndEqX\ndEqY", "Display" -> "codemirror", 
+    "Hash" -> "04580c72-1672-4ea4-bdf9-7d3c685dcb56", "Invisible" -> False, 
+    "MetaOnly" -> False, "Props" -> <|"Hidden" -> True|>, "State" -> "Idle", 
     "Type" -> "Input", "UID" -> Null, "Notebook" -> 
-     "bb8091b6-87e2-4415-94f7-46b14d8a46a4"|>}, "serializer" -> "jsfn4"|>
+     "a0cff9b2-d2fd-4c41-bc5e-820031b43f72"|>, 
+   <|"Data" -> 
+     "(x')[t]==ax (SX-x[t]) \
+(px-(*FB[*)((x[t]-y[t])(*,*)/(*,*)(y[t]))(*]FB*))", 
+    "Display" -> "codemirror", "Hash" -> 
+     "2a6ca0b7-fb39-4d14-bb31-265c2f69ffbe", "Invisible" -> False, 
+    "MetaOnly" -> False, "Props" -> <||>, "State" -> "Idle", 
+    "Type" -> "Output", "UID" -> Null, "Notebook" -> 
+     "a0cff9b2-d2fd-4c41-bc5e-820031b43f72"|>, 
+   <|"Data" -> "(y')[t]==ay (SYX-y[t]) \
+(py-(*FB[*)((-x[t]+y[t])(*,*)/(*,*)(x[t]))(*]FB*))", 
+    "Display" -> "codemirror", "Hash" -> 
+     "058b6524-1571-46c2-8a35-72d35a611691", "Invisible" -> False, 
+    "MetaOnly" -> False, "Props" -> <||>, "State" -> "Idle", 
+    "Type" -> "Output", "UID" -> Null, "Notebook" -> 
+     "a0cff9b2-d2fd-4c41-bc5e-820031b43f72"|>}, "serializer" -> "jsfn4"|>
